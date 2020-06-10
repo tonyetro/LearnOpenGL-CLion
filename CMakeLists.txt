@@ -6,13 +6,13 @@ find_package(OpenGL REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 # Including GLFW
-add_subdirectory(glfw)
-include_directories(glfw/include)
+add_subdirectory(dependencies/glfw)
+include_directories(dependencies/glfw/include)
 
 # Including GLAD
-include_directories(glad/include)
+include_directories(dependencies/glad/include)
 
-set(SOURCE_FILES main.cpp glad/src/glad.c)
+set(SOURCE_FILES src/main.cpp dependencies/glad/src/glad.c)
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 

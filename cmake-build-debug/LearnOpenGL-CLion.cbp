@@ -5,7 +5,7 @@
 		<Option title="LearnOpenGL-CLion"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;CMake Files\glfw\;CMake Files\glfw\CMake\;CMake Files\glfw\CMake\modules\;CMake Files\glfw\src\;CMake Files\glfw\examples\;CMake Files\glfw\tests\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\dependencies\;CMake Files\dependencies\glfw\;CMake Files\dependencies\glfw\CMake\;CMake Files\dependencies\glfw\CMake\modules\;CMake Files\dependencies\glfw\src\;CMake Files\dependencies\glfw\examples\;CMake Files\dependencies\glfw\tests\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug"/>
@@ -24,8 +24,8 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glad/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glad/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -49,8 +49,8 @@
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glad/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glad/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -118,27 +118,27 @@
 				</MakeCommands>
 			</Target>
 			<Target title="uninstall">
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\Makefile VERBOSE=1 uninstall"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\Makefile VERBOSE=1 uninstall"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/src"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/src"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/src"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -149,24 +149,24 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\src\Makefile VERBOSE=1 glfw"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\src\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\src\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\src\Makefile VERBOSE=1 glfw"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\src\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfw/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/src"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/src/glfw3.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_GLFW_USE_CONFIG_H"/>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/src"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/src"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -177,22 +177,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\src\Makefile VERBOSE=1 glfw/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\src\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\src\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\src\Makefile VERBOSE=1 glfw/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\src\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\src\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\src\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="boing">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/boing.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/boing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -203,22 +203,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 boing"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 boing"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="boing/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/boing.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/boing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -229,22 +229,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 boing/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 boing/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simple">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/simple.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/simple.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -255,22 +255,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 simple"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 simple"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="simple/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/simple.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/simple.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -281,22 +281,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 simple/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 simple/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gears">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/gears.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/gears.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -307,22 +307,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 gears"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 gears"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gears/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/gears.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/gears.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -333,22 +333,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 gears/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 gears/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="particles">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/particles.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/particles.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -359,22 +359,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 particles"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 particles"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="particles/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/particles.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/particles.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -385,22 +385,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 particles/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 particles/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="heightmap">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/heightmap.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/heightmap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -411,22 +411,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 heightmap"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 heightmap"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="heightmap/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/heightmap.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/heightmap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -437,22 +437,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 heightmap/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 heightmap/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="splitview">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/splitview.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/splitview.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -463,22 +463,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 splitview"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 splitview"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="splitview/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/splitview.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/splitview.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -489,22 +489,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 splitview/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 splitview/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="offscreen">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/offscreen.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/offscreen.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -515,22 +515,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 offscreen"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 offscreen"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="offscreen/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/offscreen.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/offscreen.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -541,22 +541,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 offscreen/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 offscreen/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sharing">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/sharing.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/sharing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -567,22 +567,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 sharing"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 sharing"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="sharing/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/sharing.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/sharing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -593,22 +593,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 sharing/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 sharing/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="wave">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/wave.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/wave.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -619,22 +619,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 wave"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 wave"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="wave/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples/wave.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/examples"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples/wave.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/examples"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -645,22 +645,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 wave/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 wave/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\examples\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="clipboard">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/clipboard.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/clipboard.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -671,22 +671,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clipboard"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clipboard"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="clipboard/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/clipboard.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/clipboard.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -697,22 +697,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clipboard/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clipboard/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="events">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/events.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/events.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -723,22 +723,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 events"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 events"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="events/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/events.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/events.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -749,22 +749,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 events/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 events/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="msaa">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/msaa.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/msaa.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -775,22 +775,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 msaa"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 msaa"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="msaa/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/msaa.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/msaa.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -801,22 +801,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 msaa/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 msaa/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfwinfo">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/glfwinfo.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/glfwinfo.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -827,22 +827,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 glfwinfo"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 glfwinfo"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="glfwinfo/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/glfwinfo.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/glfwinfo.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -853,22 +853,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 glfwinfo/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 glfwinfo/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="iconify">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/iconify.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/iconify.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -879,22 +879,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 iconify"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 iconify"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="iconify/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/iconify.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/iconify.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -905,22 +905,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 iconify/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 iconify/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="monitors">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/monitors.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/monitors.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -931,22 +931,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 monitors"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 monitors"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="monitors/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/monitors.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/monitors.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -957,22 +957,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 monitors/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 monitors/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="reopen">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/reopen.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/reopen.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -983,22 +983,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 reopen"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 reopen"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="reopen/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/reopen.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/reopen.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1009,22 +1009,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 reopen/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 reopen/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cursor">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/cursor.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/cursor.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1035,22 +1035,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 cursor"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 cursor"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="cursor/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/cursor.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/cursor.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1061,22 +1061,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 cursor/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 cursor/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="empty">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/empty.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/empty.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1087,22 +1087,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 empty"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 empty"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="empty/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/empty.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/empty.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1113,22 +1113,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 empty/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 empty/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gamma">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/gamma.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/gamma.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1139,22 +1139,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 gamma"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 gamma"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gamma/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/gamma.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/gamma.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1165,22 +1165,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 gamma/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 gamma/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="icon">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/icon.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/icon.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1191,22 +1191,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 icon"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 icon"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="icon/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/icon.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/icon.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1217,22 +1217,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 icon/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 icon/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="inputlag">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/inputlag.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/inputlag.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1243,22 +1243,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 inputlag"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 inputlag"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="inputlag/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/inputlag.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/inputlag.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1269,22 +1269,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 inputlag/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 inputlag/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="joysticks">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/joysticks.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/joysticks.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1295,22 +1295,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 joysticks"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 joysticks"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="joysticks/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/joysticks.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/joysticks.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1321,22 +1321,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 joysticks/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 joysticks/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="threads">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/threads.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/threads.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1347,22 +1347,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 threads"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 threads"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="threads/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/threads.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/threads.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1373,22 +1373,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 threads/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 threads/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="opacity">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/opacity.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/opacity.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1399,22 +1399,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 opacity"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 opacity"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="opacity/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/opacity.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/opacity.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1425,22 +1425,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 opacity/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 opacity/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tearing">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/tearing.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/tearing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1451,22 +1451,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 tearing"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 tearing"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tearing/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/tearing.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/tearing.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1477,22 +1477,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 tearing/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 tearing/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="timeout">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/timeout.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/timeout.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1503,22 +1503,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 timeout"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 timeout"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="timeout/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/timeout.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/timeout.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1529,22 +1529,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 timeout/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 timeout/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="title">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/title.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/title.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1555,22 +1555,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 title"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 title"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="title/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/title.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/title.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1581,22 +1581,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 title/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 title/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="windows">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/windows.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/windows.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1607,22 +1607,22 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 windows"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 windows"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="windows/fast">
-				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests/windows.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/tests"/>
+				<Option output="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests/windows.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/tests"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps"/>
-					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps"/>
+					<Add directory="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\ATLMFC\include"/>
 					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
@@ -1633,20 +1633,20 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 windows/fast"/>
-					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 windows/fast"/>
+					<CompileFile command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f D:\Projects\CPP\LearnOpenGL-CLion\cmake-build-debug\Dependencies\glfw\tests\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/glfw/src/glfw_config.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/cmake-build-debug/Dependencies/glfw/src/glfw_config.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glad/src/glad.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glad/src/glad.c">
 			<Option target="LearnOpenGL-CLion"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps/getopt.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps/getopt.c">
 			<Option target="particles"/>
 			<Option target="clipboard"/>
 			<Option target="events"/>
@@ -1657,7 +1657,7 @@
 			<Option target="inputlag"/>
 			<Option target="windows"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps/getopt.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps/getopt.h">
 			<Option target="particles"/>
 			<Option target="clipboard"/>
 			<Option target="events"/>
@@ -1668,7 +1668,7 @@
 			<Option target="inputlag"/>
 			<Option target="windows"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps/glad.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps/glad.c">
 			<Option target="boing"/>
 			<Option target="simple"/>
 			<Option target="gears"/>
@@ -1698,7 +1698,7 @@
 			<Option target="title"/>
 			<Option target="windows"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps/glad/glad.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps/glad/glad.h">
 			<Option target="boing"/>
 			<Option target="simple"/>
 			<Option target="gears"/>
@@ -1728,23 +1728,23 @@
 			<Option target="title"/>
 			<Option target="windows"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps/tinycthread.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps/tinycthread.c">
 			<Option target="particles"/>
 			<Option target="empty"/>
 			<Option target="threads"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/deps/tinycthread.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/deps/tinycthread.h">
 			<Option target="particles"/>
 			<Option target="empty"/>
 			<Option target="threads"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/boing.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/boing.c">
 			<Option target="boing"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/gears.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/gears.c">
 			<Option target="gears"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/glfw.rc">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/glfw.rc">
 			<Option target="boing"/>
 			<Option target="simple"/>
 			<Option target="gears"/>
@@ -1755,188 +1755,188 @@
 			<Option target="sharing"/>
 			<Option target="wave"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/heightmap.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/heightmap.c">
 			<Option target="heightmap"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/offscreen.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/offscreen.c">
 			<Option target="offscreen"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/particles.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/particles.c">
 			<Option target="particles"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/sharing.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/sharing.c">
 			<Option target="sharing"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/simple.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/simple.c">
 			<Option target="simple"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/splitview.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/splitview.c">
 			<Option target="splitview"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/wave.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/wave.c">
 			<Option target="wave"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include/GLFW/glfw3.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include/GLFW/glfw3.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/include/GLFW/glfw3native.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/include/GLFW/glfw3native.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/context.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/egl_context.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/egl_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/egl_context.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/egl_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/init.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/input.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/input.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/internal.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/internal.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/mappings.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/mappings.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/monitor.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/osmesa_context.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/osmesa_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/osmesa_context.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/osmesa_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/vulkan.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/vulkan.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/wgl_context.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/wgl_context.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/wgl_context.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/wgl_context.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/win32_init.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/win32_init.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/win32_joystick.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/win32_joystick.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/win32_joystick.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/win32_joystick.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/win32_monitor.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/win32_monitor.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/win32_platform.h">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/win32_platform.h">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/win32_thread.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/win32_thread.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/win32_time.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/win32_time.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/win32_window.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/win32_window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/window.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/window.c">
 			<Option target="glfw"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/clipboard.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/clipboard.c">
 			<Option target="clipboard"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/cursor.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/cursor.c">
 			<Option target="cursor"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/empty.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/empty.c">
 			<Option target="empty"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/events.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/events.c">
 			<Option target="events"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/gamma.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/gamma.c">
 			<Option target="gamma"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/glfwinfo.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/glfwinfo.c">
 			<Option target="glfwinfo"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/icon.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/icon.c">
 			<Option target="icon"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/iconify.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/iconify.c">
 			<Option target="iconify"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/inputlag.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/inputlag.c">
 			<Option target="inputlag"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/joysticks.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/joysticks.c">
 			<Option target="joysticks"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/monitors.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/monitors.c">
 			<Option target="monitors"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/msaa.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/msaa.c">
 			<Option target="msaa"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/opacity.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/opacity.c">
 			<Option target="opacity"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/reopen.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/reopen.c">
 			<Option target="reopen"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/tearing.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/tearing.c">
 			<Option target="tearing"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/threads.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/threads.c">
 			<Option target="threads"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/timeout.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/timeout.c">
 			<Option target="timeout"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/title.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/title.c">
 			<Option target="title"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/windows.c">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/windows.c">
 			<Option target="windows"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/main.cpp">
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/src/main.cpp">
 			<Option target="LearnOpenGL-CLion"/>
 		</Unit>
 		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\glfw\"/>
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\dependencies\glfw\"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/cmake_uninstall.cmake.in">
-			<Option virtualFolder="CMake Files\glfw\"/>
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\dependencies\glfw\"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/CMake/modules/FindVulkan.cmake">
-			<Option virtualFolder="CMake Files\glfw\CMake\modules\"/>
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/CMake/modules/FindVulkan.cmake">
+			<Option virtualFolder="CMake Files\dependencies\glfw\CMake\modules\"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\glfw\src\"/>
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\dependencies\glfw\src\"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/glfw3.pc.in">
-			<Option virtualFolder="CMake Files\glfw\src\"/>
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/glfw3.pc.in">
+			<Option virtualFolder="CMake Files\dependencies\glfw\src\"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/glfw3Config.cmake.in">
-			<Option virtualFolder="CMake Files\glfw\src\"/>
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/glfw3Config.cmake.in">
+			<Option virtualFolder="CMake Files\dependencies\glfw\src\"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/src/glfw_config.h.in">
-			<Option virtualFolder="CMake Files\glfw\src\"/>
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/src/glfw_config.h.in">
+			<Option virtualFolder="CMake Files\dependencies\glfw\src\"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/examples/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\glfw\examples\"/>
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\dependencies\glfw\examples\"/>
 		</Unit>
-		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/glfw/tests/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\glfw\tests\"/>
+		<Unit filename="D:/Projects/CPP/LearnOpenGL-CLion/dependencies/glfw/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\dependencies\glfw\tests\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
