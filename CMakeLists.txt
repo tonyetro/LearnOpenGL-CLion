@@ -12,7 +12,9 @@ include_directories(dependencies/glfw/include)
 # Including GLAD
 include_directories(dependencies/glad/include)
 
-set(SOURCE_FILES src/main.cpp dependencies/glad/src/glad.c)
+include_directories(${CMAKE_SOURCE_DIR}/includes)
+
+set(SOURCE_FILES src/main.cpp dependencies/glad/src/glad.c includes/learnopengl/shader.h)
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 
