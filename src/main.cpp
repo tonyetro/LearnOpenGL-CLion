@@ -97,6 +97,9 @@ int main()
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f); // "state setting" function
 		glClear(GL_COLOR_BUFFER_BIT); // "state using" function
 
+		float offset = 0.5f;
+		ourShader.SetFloat("xOffset", offset);
+
 		// render the triangle
 		ourShader.Use();
 		glBindVertexArray(VAO);
