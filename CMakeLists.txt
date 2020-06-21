@@ -6,15 +6,21 @@ find_package(OpenGL REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 # Including GLFW
-add_subdirectory(dependencies/glfw)
-include_directories(dependencies/glfw/include)
+add_subdirectory(includes/glfw)
+include_directories(includes/glfw/include)
 
 # Including GLAD
-include_directories(dependencies/glad/include)
+include_directories(includes/glad/include)
 
 include_directories(${CMAKE_SOURCE_DIR}/includes)
 
-set(SOURCE_FILES src/main.cpp dependencies/glad/src/glad.c includes/learnopengl/shader.h)
+set(SOURCE_FILES
+	src/main.cpp
+	includes/glad/src/glad.c
+	includes/learnopengl/shader.h
+	includes/learnopengl/stb_image.cpp includes/learnopengl/filesystem.h
+	includes/stb_image.h
+)
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
 
